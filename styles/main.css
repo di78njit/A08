@@ -1,0 +1,137 @@
+/* DEVELOPER: Dilawaiz, IS117-xxx, Spring 2026 */
+
+/* custom property */
+:root {
+    --accent-color: #800000;  /* dark red */
+    --gradient-color: #f6bb73; /* orange gradient */
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* default styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 80%;
+    margin: auto;
+    border: 2px solid var(--accent-color);
+}
+
+a:hover, a:focus {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+h1, h2, h3, p, ul {
+    padding: 0.5em 0;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+
+h3 {
+    font-size: 105%;
+}
+
+ul {
+    margin-left: 2em;
+}
+
+/* header styles */
+header {
+    border-bottom: 2px solid var(--accent-color);
+    background-image: linear-gradient(
+        30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
+}
+
+header h2 {
+    font-size: 175%;
+    padding: 0.5em 0 0 0;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    padding-bottom: 1em;
+}
+
+header img {
+    float: left;
+    margin: 0.75em 1em;
+}
+
+/* aside styles */
+aside {
+    float: left;
+    width: 25%;
+    padding: 1em;
+    border-right: 2px solid var(--accent-color);
+}
+
+aside ul li {
+    margin: 0.5em 0;
+}
+
+/* main content styles */
+main {
+    margin-left: 27%; /* leaves space for aside */
+    padding: 0 1em 1em;
+}
+
+main h1 {
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+main blockquote {
+    font-style: italic;
+    padding-left: 1em;
+}
+
+main img {
+    border: 4px double var(--accent-color);
+    border-radius: 10px;
+    float: right;
+    margin: 0.5em 0 0 1em;
+    max-width: 300px;
+}
+
+/* speaker images on speaker pages */
+.speaker-img {
+    border: 4px double var(--accent-color);
+    border-radius: 10px;
+    float: right;
+    margin: 0.5em 0 0 1em;
+    max-width: 250px;
+}
+
+/* footer styles */
+footer {
+    background-color: var(--accent-color);
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+
+/* CSS class for larger text */
+.large {
+    font-size: 125%;
+}
+
+/* clearfix helper */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
